@@ -1,0 +1,34 @@
+-------------------------------------EXECUÇÃO DOS CENÁRIOS DE TESTES----------------------------------------------
+
+Os cenários de testes contidos neste diretório são os mesmos referidos no texto (monografia).
+Para reproduzir os testes, realizar os seguintes passos:
+
+1. Localiza o diretorio referente ao cenário de teste desejado (1, 2 ou 3)
+2. Copiar o arquivo "input.txt" existente dentro do diretório (Arquivo de inicialização)
+3. Colar o arquivo "input.txt" dentro o diretório "Scheduling", onde está localizado o executável "scheduling.exe"
+4. Executar o "scheduling.exe"
+
+
+Conteúdo das pastas
+
+I.  Teste 1 - Arquivos referentes ao cenário de testes 1
+	I.I.   input.txt: Arquivo de inicialização a ser usado para repetir o cenário de testes 1
+	I.II.  testes.ods: planilha utilizada para registrar os testes do cenário de testes 1 (Open Office).
+
+II. Teste 2 - Arquivos referentes ao cenário de testes 2
+	II.I.   input.txt: Arquivo de inicialização a ser usado para repetir o cenário de testes 2
+	II.II.  execução do software que resultou no melhor schedule.
+	II.III. testes.ods: planilha utilizada para registrar os testes do cenário de testes 2 (Open Office).
+
+III. Teste 3 - Arquivos referentes ao cenário de testes 3
+	III.I.   input.txt: Arquivo de inicialização a ser usado para repetir o cenário de testes 3
+	III.II.  execução do software que resultou no melhor schedule.
+	III.III. testes.ods: planilha utilizada para registrar os testes do cenário de testes 3 (Open Office).
+
+
+
+
+
+
+
+

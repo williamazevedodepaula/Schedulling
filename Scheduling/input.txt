@@ -1,0 +1,68 @@
+--------------------------------------
+Parâmetros
+--------------------------------------
+
+tamanho da populacao:5
+taxa de mutacao:11
+quantidade de cruzamentos:1
+numero de geracoes:10000
+--------------------------------------
+Vetor de Recutsos (Quantidades)
+--------------------------------------
+
+quantidade de recursos:6
+vetor recursos:
+{
+2	
+1	
+1	
+1	
+1	
+1			
+}
+---Labels (Opicional)
+{
+Batedeira
+Forno
+Freezer
+Confeiteiro
+Inspetor
+Embalador
+}
+
+--------------------------------------
+matriz de Processos
+--------------------------------------
+Recurso X Processo  
+--------------------------------------
+
+quantidade de processos:2
+matriz processos:
+{
+5	20	0	15	0	10
+5	0	40	10	0	10
+}
+--Labels(opicional)
+{
+Fazer bolo
+Fazer torta
+}
+prazo de entrega:
+{
+1200
+1200
+}
+
+--------------------------------------
+matriz de ordem de utilização dos 
+recursos pelo processo
+--------------------------------------
+Recurso X Processo
+--------------------------------------
+ordem de utilizacao:
+{
+1	2	0	3	0	4
+1	0	2	3	0	4
+}
+
+

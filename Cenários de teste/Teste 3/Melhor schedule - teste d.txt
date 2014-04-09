@@ -1,0 +1,168 @@
+Variável de ambiente line 5000 não definida
+taxa de mutacao:11
+numero de geracoes:10000
+quantidade de cruzamentos:50
+tamanho da populacao:200
+quantidade de recursos:8
+quantidade de processos:10
+
+vetor recursos:
+-------------------------------------------------------------
+ID      Qtde.   Nome
+
+r0      3       batedeira
+r1      2       fogao
+r2      2       forno
+r3      5       freezer
+r4      1       confeiteiro
+r5      2       salgadeiro
+r6      3       inspetor
+r7      3       embalador
+
+
+matriz processsos:
+-------------------------------------------------------------
+ID      Nome
+
+p0      fazer bolo
+p1      fazer biscoito
+p2      fazer torta
+p3      fazer brigadeiro
+p4      fazer beijinho
+p5      fazer olho de sogra
+p6      fazer coxinha
+p7      fazer pastel frito
+p8      fazer pastel assado
+p9      fazer enrolado
+
+
+prazo de entrega:
+-------------------------------------------------------------
+ID      Tempo
+
+p0      180
+p1      180
+p2      180
+p3      180
+p4      180
+p5      180
+p6      180
+p7      180
+p8      180
+p9      180
+
+
+Tempo de Recurso por Processo:
+-------------------------------------------------------------
+        r0      r1      r2      r3      r4      r5      r6      r7
+
+p0      10      0       30      30      20      0       5       0
+p1      8       10      0       0       0       0       4       5
+p2      10      0       35      0       15      0       5       0
+p3      0       10      0       5       12      0       6       5
+p4      5       0       0       4       5       0       5       5
+p5      5       0       0       4       5       0       5       5
+p6      6       10      0       0       0       10      6       6
+p7      7       8       0       0       0       9       6       6
+p8      7       0       15      0       0       9       6       6
+p9      9       9       0       0       0       10      6       7
+
+
+ordem de utilizacao por processo
+-------------------------------------------------------------
+        r0      r1      r2      r3      r4      r5      r6      r7
+
+p0      1       0       2       5       3       0       4       0
+p1      1       2       0       0       0       0       3       4
+p2      1       0       2       0       3       0       4       0
+p3      0       1       0       2       3       0       4       5
+p4      1       0       0       2       3       0       4       5
+p5      1       0       0       2       3       0       4       5
+p6      1       3       0       0       0       2       4       5
+p7      1       3       0       0       0       2       4       5
+p8      1       3       0       0       0       2       4       5
+p9      1       3       0       0       0       2       4       5
+
+
+fazer bolo:     batedeira -> forno -> confeiteiro -> inspetor -> freezer
+fazer biscoito: batedeira -> fogao -> inspetor -> embalador
+fazer torta:    batedeira -> forno -> confeiteiro -> inspetor
+fazer brigadeiro:        -> fogao -> freezer -> confeiteiro -> inspetor -> embalador
+fazer beijinho: batedeira -> freezer -> confeiteiro -> inspetor -> embalador
+fazer olho de sogra:    batedeira -> freezer -> confeiteiro -> inspetor -> embalador
+fazer coxinha:  batedeira -> salgadeiro -> fogao -> inspetor -> embalador
+fazer pastel frito:     batedeira -> salgadeiro -> fogao -> inspetor -> embalador
+fazer pastel assado:    batedeira -> salgadeiro -> fogao -> inspetor -> embalador
+fazer enrolado: batedeira -> salgadeiro -> fogao -> inspetor -> embalador
+Pressione qualquer tecla para continuar. . .
+
+
+-------------------------------------------------------------
+SOLUCAO INICIAL:
+
+SOLUCAO PARCIAL:
+
+
+
+0       1       0       3       5       0       7       4       0       0       0       0       0       0       0       0       0
+0       0       0       0       1       2       7       0       0       0       8       0       0       0       0       0       0
+1       3       5       7       0       0       0       0       0       0       0       0       0       0       0       0       0
+2       0       0       4       0       5       0       7       0       8       0       0       0       0       0       0       0
+1       0       4       0       0       5       7       0       8       0       0       0       0       0       0       0       0
+0       0       1       0       4       5       7       0       8       0       0       0       0       0       0       0       0
+1       6       0       0       2       0       7       0       8       0       0       0       0       0       0       0       0
+1       0       6       2       7       8       0       0       0       0       0       0       0       0       0       0       0
+1       6       2       0       0       0       0       0       7       0       0       8       0       0       0       0       0
+0       0       1       6       2       7       8       0       0       0       0       0       0       0       0       0       0
+
+
+individuo 0     valor: 4177
+Valido: Nao
+Geracao: 0
+
+
+
+-------------------------------------------------------------
+SOLUCAO PARCIAL:
+
+
+
+0       1       3       5       7       4       0       0       0       0       0       0       0       0       0       0       0
+0       0       1       0       0       2       7       0       8       0       0       0       0       0       0       0       0
+0       0       0       1       0       3       5       7       0       0       0       0       0       0       0       0       0
+0       2       4       0       5       7       8       0       0       0       0       0       0       0       0       0       0
+1       4       5       7       0       8       0       0       0       0       0       0       0       0       0       0       0
+0       0       0       0       0       0       1       4       0       0       5       0       0       7       0       8       0
+0       0       0       1       6       2       7       0       0       0       0       0       8       0       0       0       0
+0       1       6       2       7       0       0       8       0       0       0       0       0       0       0       0       0
+1       0       6       2       7       0       8       0       0       0       0       0       0       0       0       0       0
+1       0       0       6       2       7       0       0       8       0       0       0       0       0       0       0       0
+
+
+individuo 33    valor: 165
+Valido: Sim
+Geracao: 22
+
+
+
+-------------------------------------------------------------
+SOLUCAO PARCIAL:
+
+
+
+0       1       3       5       7       4       0       0       0       0       0       0       0       0       0       0       0
+0       0       1       0       2       7       8       0       0       0       0       0       0       0       0       0       0
+0       0       0       1       0       3       5       7       0       0       0       0       0       0       0       0       0
+0       2       4       0       0       5       7       0       8       0       0       0       0       0       0       0       0
+1       4       5       7       0       8       0       0       0       0       0       0       0       0       0       0       0
+0       1       4       0       5       7       8       0       0       0       0       0       0       0       0       0       0
+0       0       0       1       6       2       7       0       0       8       0       0       0       0       0       0       0
+1       0       6       2       0       0       0       7       8       0       0       0       0       0       0       0       0
+1       0       6       2       7       0       8       0       0       0       0       0       0       0       0       0       0
+0       0       1       6       2       0       7       8       0       0       0       0       0       0       0       0       0
+
+
+individuo 168   valor: 146
+Valido: Sim
+Geracao: 30
+
